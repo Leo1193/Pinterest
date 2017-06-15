@@ -54,3 +54,14 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem 'bootstrap-sass'
+
+gem 'devise'
+
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+
+gem 'activeadmin'
+
+# Plus integrations with:
+gem 'cancan' # or cancancan
+gem 'draper'
+gem 'pundit'
