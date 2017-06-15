@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   get 'mypins' => 'pins#mypins'
   get 'pinsoff/:user_id' => 'pins#pinsoff', :as => "pinsoff"
 
+  devise_scope :user do
+  	get '/user/sign_out' => 'devise/sessions#destroy'
+  end
 end
